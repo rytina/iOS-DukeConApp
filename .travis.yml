@@ -5,7 +5,4 @@ script: xcodebuild -project ConApp.xcodeproj -sdk iphonesimulator7.1 ONLY_ACTIVE
 addons:
   artifacts: true
 
-addons:
-  artifacts:
-	paths:
-    	- /Users/travis/build/rytina/iOS-DukeConApp/build/Release-iphonesimulator/ConApp.app
+
