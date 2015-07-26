@@ -2,7 +2,5 @@ language: objective-c
 
 script: xcodebuild -project ConApp.xcodeproj -sdk iphonesimulator7.1 ONLY_ACTIVE_ARCH=NO 
 
-addons:
-  artifacts: true
-
-
+after_success:
+    "zip -r ConApp.zip $HOME/iOS-DukeConApp/build/Release-iphonesimulator/ConApp.app && curl -T ConApp.zip -u $FTP_USER:$FTP_PASS ftp.hosting-agency.de/public_html/dukecon-apps/"
