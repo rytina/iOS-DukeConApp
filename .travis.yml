@@ -9,4 +9,3 @@ addons:
   artifacts:
 	paths:
     	- /Users/travis/build/rytina/iOS-DukeConApp/build/Release-iphonesimulator/ConApp.app
-        - $(git ls-files -o | tr "\n" ":")
